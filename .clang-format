@@ -1,0 +1,49 @@
+BasedOnStyle: WebKit
+
+#ColumnLimit: 80
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction:  true
+  AfterClass:     true
+  AfterStruct:    true
+  AfterEnum:      true
+  AfterUnion:     true
+  SplitEmptyFunction: true
+
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments:
+  Enabled: true
+  # Does not work with llvm-vs-code-extensions.vscode-clangd
+  #Consecutive: true
+  AcrossComments: true
+  AlignCompound: true
+  PadOperators: true
+AlignConsecutiveDeclarations:
+  Enabled: true
+  # Does not work with llvm-vs-code-extensions.vscode-clangd
+  #Consecutive: true
+  AcrossComments: true
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveMacros:
+  Enabled: true
+  # Does not work with llvm-vs-code-extensions.vscode-clangd
+  #Consecutive: true
+  AcrossComments: true
+AlignEscapedNewlines: Right
+AlignOperands: Align
+AlignTrailingComments:
+  Kind: Leave
+
+BreakBeforeBinaryOperators: None
+BreakBeforeConceptDeclarations: Always
+
+BinPackArguments: false
+BinPackParameters: false
+
+AllowAllArgumentsOnNextLine: false
+
+IndentCaseLabels: true
+IndentWrappedFunctionNames: true
+
+BreakConstructorInitializers: BeforeColon

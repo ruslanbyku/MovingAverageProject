@@ -47,3 +47,5 @@ IndentCaseLabels: true
 IndentWrappedFunctionNames: true
 
 BreakConstructorInitializers: BeforeColon
+
+SortIncludes: true

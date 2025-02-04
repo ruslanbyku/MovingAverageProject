@@ -12,7 +12,7 @@ static const int dataSize      = 1'000'000;
 static const int windowSizes[] = { 4, 8, 16, 32, 64, 128 };
 
 template <typename T>
-void printVector(const std::vector<T>& data)
+static void printVector(const std::vector<T>& data)
 {
     for (const auto& value : data) {
         std::cout << value << " ";
@@ -20,7 +20,7 @@ void printVector(const std::vector<T>& data)
     std::cout << std::endl;
 };
 
-void calculateMovingAverageForDouble()
+static void calculateMovingAverageForDouble()
 {
     RandomGenerator<double> randomGenerator;
     std::vector<double>     inputData =
@@ -53,7 +53,7 @@ void calculateMovingAverageForDouble()
 }
 
 // The Time complexity is the same as for `calculateMovingAverageForDouble()`
-void calculateMovingAverageForFloat()
+static void calculateMovingAverageForFloat()
 {
     RandomGenerator<float> randomGenerator;
     std::vector<float>     inputData =
@@ -84,7 +84,7 @@ void calculateMovingAverageForFloat()
     }
 }
 
-void testMovingAverage();
+static void testMovingAverage();
 
 int main(int argc, char** argv)
 {
@@ -101,7 +101,7 @@ int main(int argc, char** argv)
 //
 
 // Test the double type
-void testMovingAverage()
+static void testMovingAverage()
 {
     const int           testDataSize = 10;
     std::vector<double> inputData    = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 };

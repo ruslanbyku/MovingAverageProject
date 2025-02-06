@@ -1,4 +1,4 @@
-# Moving Average
+# Moving Average (A test task for a candidate)
 
 ### Introduction
 The _MovingAverage_ finds the average value within the defined window size.
